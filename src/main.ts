@@ -1,13 +1,15 @@
 import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
 import "@picocss/pico";
+import "toastify-js/src/toastify.css";
+import { Router } from './router';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/`
-  <div class="container">
-    <h1>HOLA</h1>
-  </div>
-`
+function App() {
+  const $root = document.getElementById('root') as HTMLDivElement | null;
+  if (!$root) throw new Error("Root element not found");
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+  Router()
+
+}
+
+App();
+
