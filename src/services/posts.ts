@@ -48,7 +48,7 @@ export async function updatePost(postId: number, postToUpdate: IPostWithoutId) {
     throw err;
   }  
 } 
-
+//borrar
 export async function deletePost(postId: number, postToDelete: IPostWithoutId) {
   try {
     const response = await fetch(`${API_URL}/posts/${postId}`, {

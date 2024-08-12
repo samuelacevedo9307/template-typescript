@@ -1,4 +1,4 @@
-import { navigateTo } from '../Router';
+import { navigateTo } from '../router';
 
 export function logOut() {
 
